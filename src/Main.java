@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -12,7 +14,8 @@ public class Main {
 
     public static Computadora hacerComputadora() {  //Funcion que utilizo para crear un objeto
                                                     // de tipo Computadora.
-        int idIngresado = 01;
+        Scanner imput = new Scanner(System.in);
+        int idIngresado = imput.nextInt(); imput.nextLine();
         String marcaIngresada = "Exo";
         String modeloIng = "modelo";
         int precioIng = 1500;
@@ -20,8 +23,8 @@ public class Main {
         String procesadorIng = "Intel";
         String memRamIng = "Intel";
         int almacenamientoIng = 512;
-        /*Estas variables ya tienen definidas valores, pero se dichos datos se pueden ingresar primero
-        por consola.
+        /*Estas variables ya tienen definidas valores, pero dichos datos se pueden ingresar primero
+        por consola. Por ejemplo en la linea 18.
          */
 
         Computadora compu = new Computadora(idIngresado, marcaIngresada, modeloIng, precioIng,
